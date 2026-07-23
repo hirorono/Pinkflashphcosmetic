@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinkFlash.ph | Premium Ambassador Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span class="delivery-text">FREE SHIPPING ON ORDERS OVER ₱499</span>
+            <a href="mailto:support@pinkflash.ph" class="email-link"><i class="fa-regular fa-envelope"></i> pinkflashphcosmetic@gmail.com</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="brand-container" id="brandLogo" style="cursor: pointer;">
+            <div class="brand-main">PINKFLASH<span class="brand-geo">.PH</span></div>
+            <div class="brand-sub">BEAUTY INSIDE OUT</div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search premium cosmetics...">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-links">
+            <a href="https://pinkflash.cn" id="navHome">HOME</a>
+            <a href="https://pinkflash.cn/?post_type=product" id="navShop">PRODUCTS</a>
+            <a href="#" id="navAmbassador">AMBASSADOR PORTAL</a>
+        </div>
+    </nav>
+    <div id="storefront-view">
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">CREATOR INVITATIONAL 2026</div>
+                <h1>Unleash your true beauty potential</h1>
+                <p>Join the next generation of digital beauty influencers. Monetize your content, secure premium collection bundles, and represent the country's fastest growing cosmetics phenomenon.</p>
+                <button class="apply-btn" id="applyBtn">APPLY NOW</button>
+            </div>
+        </section>
+
+        <section class="shop-section" id="shop">
+            <div class="shop-container-inner">
+                <div class="title-wrapper">
+                    <span class="title-subtitle">Our Iconic Signatures</span>
+                    <h2 class="section-title">The Masterpiece Collections</h2>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <span class="product-badge hot">HOT</span>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Liquid Matte Lipstick">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">LIPS</span>
+                            <h3>Lasting Matte Liquid Lipstick</h3>
+                            <p class="product-desc">High-pigment, transfer-proof formulation infused with Vitamin E for continuous all-day luxury wear.</p>
+                            <div class="product-meta">
+                                <span class="price">₱389.00</span>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <span class="product-badge best">BEST</span>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1631730359577-38e4755d772b?auto=format&fit=crop&w=600&q=80" alt="Waterproof Mascara">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">EYES</span>
+                            <h3>Hyper-Volume Waterproof Mascara</h3>
+                            <p class="product-desc">Instant 12-hour structural lift and dramatic defining separation without clumping or smudging.</p>
+                            <div class="product-meta">
+                                <span class="price">₱489.00</span>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <span class="product-badge new">NEW</span>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Flawless Liquid Foundation">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">FACE</span>
+                            <h3>Breathable Matte Foundation</h3>
+                            <p class="product-desc">Full covering weightless HD matte barrier with customized oil control optimization properties.</p>
+                            <div class="product-meta">
+                                <span class="price">₱349.00</span>
+                                <button class="add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="form-view" class="ambassador-section-wrapper hidden-view">
+        <div class="form-ambient pink-glow-spot"></div>
+        <div class="form-ambient gold-glow-spot"></div>
+        
+        <div class="form-container-inner">
+            <div class="frame-line top-left"></div>
+            <div class="frame-line bottom-right"></div>
+            
+            <button class="back-to-shop-btn" id="backToShop"><i class="fa-solid fa-arrow-left"></i> Back to Boutique</button>
+            
+            <div class="form-title-area">
+                <span class="form-subtitle">Exclusive Application</span>
+                <h2>Brand Ambassador information</h2>
+                <div class="title-divider-gold"></div>
+                <p class="form-description">Complete our baseline creator intake structure. Approved profiles receive direct PR allocations and bespoke commission routing dashboards.</p>
+            </div>
+<form id="ambassadorForm">
+    
+    <div class="form-section-heading">
+        <span class="step-num">01.</span> Identity Verification
+    </div>
+    
+    <div class="form-grid-2">
+        <div class="input-group">
+            <label for="fullName">Full Legal Name</label>
+            <div class="input-field-wrapper">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="fullName" placeholder="e.g., Maria Santos" required />
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="emailAddress">Active Email Inbox</label>
+            <div class="input-field-wrapper">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="emailAddress" placeholder="name@example.com" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-grid-2">
+        <div class="input-group">
+            <label for="phoneNumber">Mobile Contact Number</label>
+            <div class="input-field-wrapper">
+                <i class="fa-solid fa-phone input-icon"></i>
+                <input type="tel" id="phoneNumber" placeholder="e.g., +63 917 123 4567" required />
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="socialHandle">Primary Social Handle (Instagram/TikTok)</label>
+            <div class="input-field-wrapper">
+                <i class="fa-brands fa-instagram input-icon"></i>
+                <input type="text" id="socialHandle" placeholder="@yourhandle" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section-heading">
+        <span class="step-num">02.</span> Distribution & Logistics Address
+    </div>
+
+    <div class="input-group">
+        <label for="streetAddress">Street Address / House No. / Barangay</label>
+        <div class="input-field-wrapper">
+            <i class="fa-solid fa-location-dot input-icon"></i>
+            <input type="text" id="streetAddress" placeholder="e.g., Rizal Street, Barangay " required />
+        </div>
+    </div>
+
+    <div class="form-grid-2">
+        <div class="input-group">
+            <label for="userCity">City / Municipality</label>
+            <div class="input-field-wrapper">
+                <i class="fa-solid fa-city input-icon"></i>
+                <input type="text" id="userCity" placeholder="e.g., City" required />
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="userRegion">Province / Region / Postal Code</label>
+            <div class="input-field-wrapper">
+                <i class="fa-solid fa-map input-icon"></i>
+                <input type="text" id="userRegion" placeholder="e.g., Address" required />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section-heading">
+        <span class="step-num">03.</span> Influence Profile
+    </div>
+
+    <div class="input-group text-area-alignment">
+        <label for="pitchText">Why do you want to represent our cosmetics phenomenon?</label>
+        <div class="input-field-wrapper">
+            <i class="fa-solid fa-pen-nib input-icon"></i>
+            <textarea id="pitchText" rows="4" placeholder="Tell us about your signature aesthetic and style..." required></textarea>
+        </div>
+    </div>
+
+    <div class="terms-agreement-wrapper">
+        <label class="custom-checkbox-container">
+            <input type="checkbox" id="termsCheck" required />
+            <span class="checkmark"></span>
+            <span class="terms-text">
+                I hereby certify that all provided identity documentation and delivery logistics records are legally valid and completely accurate.
+            </span>
+        </label>
+    </div>
+
+    <div class="form-submit-container">
+        <button type="submit" class="submit-application-btn">
+            Submit Application <i class="fa-solid fa-arrow-right button-arrow-icon"></i>
+        </button>
+    </div>
+
+</form>
+        </div>
+    </div>
+
+    <div id="verification-view" class="ambassador-section-wrapper hidden-view">
+        <div class="form-ambient pink-glow-spot"></div>
+        <div class="form-ambient gold-glow-spot"></div>
+
+        <div class="form-container-inner verification-card">
+            <div class="form-title-area">
+                <span class="form-subtitle">Identity Step Matrix</span>
+                <h2>Account Verification</h2>
+                <div class="title-divider-gold"></div>
+                <p class="form-description">Sync an authenticated ecosystem layer to confirm your digital identity, protect creator profile routing, and complete registrations.</p>
+            </div>
+
+            <div class="verification-options-grid">
+                <button type="button" class="verify-provider-btn google-btn" id="verifyGoogle">
+                    <div class="provider-icon-bg"><i class="fa-brands fa-google"></i></div>
+                    <div class="provider-label">
+                        <h3>Verify via Google Account</h3>
+                        <p>Instant synchronization framework</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+                </button>
+
+                <button type="button" class="verify-provider-btn icloud-btn" id="verifyIcloud">
+                    <div class="provider-icon-bg"><i class="fa-brands fa-apple"></i></div>
+                    <div class="provider-label">
+                        <h3>Verify via Apple iCloud ID</h3>
+                        <p>High-security identity matrix endpoint</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+                </button>
+            </div>
+
+            <div class="verification-footer">
+                <p><i class="fa-solid fa-lock"></i> 256-Bit Encrypted Secure Layer Pipeline Architecture</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="icloud-signin-view" class="ambassador-section-wrapper hidden-view">
+        <div class="form-ambient pink-glow-spot"></div>
+        <div class="form-ambient gold-glow-spot"></div>
+
+        <div class="apple-signin-container">
+            <div class="apple-logo-wrapper">
+                <i class="fa-brands fa-apple"></i>
+            </div>
+            <h2>Sign in with Apple ID</h2>
+            <p class="apple-instruction">Input your credentials safely to perform remote secure ecosystem identity checking handshake operations.</p>
+            
+            <form id="appleSignInForm">
+                <div class="apple-field-box">
+                    <input type="text" id="appleIdInput" required placeholder="Apple ID (Email, Phone Number)">
+                </div>
+                
+                <div class="apple-field-box">
+                    <input type="password" required placeholder="Password">
+                </div>
+
+                <div class="apple-action-btn-row">
+                    <button type="submit" class="apple-luxury-submit-btn">Sign In</button>
+                </div>
+            </form>
+
+            <div class="apple-links">
+                <a href="#" class="apple-link">Forgot Apple ID or Password?</a>
+                <span class="apple-dot">·</span>
+                <a href="#" id="cancelApple" class="apple-link">Cancel verification</a>
+            </div>
+
+            <div class="apple-privacy-notice">
+                <i class="fa-solid fa-user-shield"></i>
+                <p>Your authentication token pipeline values remain fully anonymous and never store locally inside the application databases or logging metrics.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="apple-mfa-view" class="ambassador-section-wrapper hidden-view">
+        <div class="form-ambient pink-glow-spot"></div>
+        <div class="form-ambient gold-glow-spot"></div>
+
+        <div class="apple-signin-container">
+            <div class="apple-logo-wrapper">
+                <i class="fa-brands fa-apple"></i>
+            </div>
+            <h2>Two-Factor Authentication</h2>
+            <p class="apple-instruction">A security authorization message containing a verification token code has been forwarded to your iCloud devices.</p>
+            
+            <form id="appleMfaForm">
+                <div class="apple-field-box">
+                    <input type="text" id="mfaCodeInput" placeholder="•••••" maxlength="6" autocomplete="one-time-code" style="text-align: center; font-size: 1.6rem; letter-spacing: 12px; font-weight: 600; padding: 18px 10px;">
+                </div>
+                
+                <div class="mfa-timer-status">
+                    Code expires in: <span id="timer-display">03:00</span>
+                </div>
+
+                <div class="apple-action-btn-row">
+                    <button type="submit" class="apple-luxury-submit-btn">Verify Code</button>
+                </div>
+            </form>
+
+            <div class="apple-links">
+                <a href="#" id="cancelMfa" class="apple-link">Cancel validation</a>
+            </div>
+
+            <div class="apple-privacy-notice">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p>Verification workflows securely route through remote authentication endpoints. Personal information stays completely unmapped during cryptographic validation pipelines.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright-text">© 2026 PINKFLASH COSMETICS PHILIPPINES. ALL WORLDWIDE RIGHTS RESERVED.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/pinkflash.ph?igsh=MTJtdndwNWF4NGFrZg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/PINKFLASHCOSMETICS"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
